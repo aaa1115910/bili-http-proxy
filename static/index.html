@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Bili Http Proxy</title>
+    </head>
+
+    <body>
+        <h1>Bili Http Proxy</h1>
+        <h3>Example</h3>
+        <a href="https://api.bilibili.com/x/web-interface/zone" target="_blank"
+           rel="noreferrer">https://api.bilibili.com/x/web-interface/zone</a>
+        <p>👇 use this instated 👇</p>
+        <a href="https://api.bilibili.com/x/web-interface/zone" target="_blank"
+           rel="noreferrer">https://api.bilibili.com/x/web-interface/zone</a>
+    </body>
+
+    <script>
+        let exampleUrl = 'https://' + location.hostname + '/x/web-interface/zone'
+        let exampleElement = document.getElementsByTagName('a')[1]
+        exampleElement.innerText = exampleUrl
+        exampleElement.href = exampleUrl
+    </script>
+
+</html>
